@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+header {
+  padding: 2rem 1rem;
+}
+
+header .flexContainer .title h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header .flexContainer .title p {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  color: #63687e;
+}
+
+header .flexContainer .toggleBar {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid black;
+}
+
+header .flexContainer .toggleBar p {
+  font-weight: 700;
+  color: #63687e;
+}
+
+header .flexContainer .toggleBar button {
+  padding: 3px;
+  width: 60px;
+  height: 30px;
+  background-color: #aeb3cb;
+  border-radius: 15px;
+  border: none;
+}
+
+header .flexContainer .toggleBar button:hover, header .flexContainer .toggleBar button:focus {
+  cursor: pointer;
+  outline: 2px solid red;
+}
+
+header .flexContainer .toggleBar button .switch {
+  margin: 0;
+  position: relative;
+  content: "";
+  width: 50%;
+  height: 100%;
+  left: 27px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: left 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
+}
+
+header .flexContainer .toggleBar button .switch.darkModeActive {
+  left: 0;
+}
+
+@media screen and (min-width: 30rem) {
+  header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  header {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  header {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  header {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  header .flexContainer {
+    max-width: 1100px;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  header .flexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .flexContainer .toggleBar {
+    margin: 0;
+    padding: 0;
+    border-top: none;
+  }
+  header .flexContainer .toggleBar p {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 72rem) {
+  header .flexContainer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+section#main {
+  padding: 0 1rem;
+}
+
+section#main .flexContainer {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2rem;
+}
+
+section#main .flexContainer .card {
+  width: 343px;
+  padding: 2rem;
+  text-align: center;
+  border-top: 6px solid transparent;
+  border-radius: 8px;
+  background-color: #f0f2fa;
+}
+
+section#main .flexContainer .card .username {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #63687e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#main .flexContainer .card .username svg {
+  margin-right: 5px;
+}
+
+section#main .flexContainer .card .mainNumber {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e202a;
+}
+
+section#main .flexContainer .card .kind {
+  color: #63687e;
+  letter-spacing: 6px;
+}
+
+section#main .flexContainer .card .change {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: #1db489;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#main .flexContainer .card .change svg {
+  margin-right: 5px;
+}
+
+section#main .flexContainer .card.facebook {
+  border-color: #198ff5;
+}
+
+section#main .flexContainer .card.twitter {
+  border-color: #1ca0f2;
+}
+
+section#main .flexContainer .card.instagram {
+  border-color: turquoise;
+}
+
+section#main .flexContainer .card.youtube {
+  border-color: #c4032a;
+}
+
+@media screen and (min-width: 30rem) {
+  section#main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  section#main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  section#main {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  section#main {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  section#main .flexContainer {
+    max-width: 1100px;
+  }
+  section#main .flexContainer .card {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 72rem) {
+  section#main .flexContainer {
+    margin: 0 auto;
+  }
+}
+
+section#overview {
+  margin-top: 2rem;
+  padding: 1rem 1rem 3rem 1rem;
+}
+
+section#overview h2 {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #63687e;
+}
+
+section#overview .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 2rem;
+}
+
+section#overview .flexContainer .card {
+  width: 343px;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  background-color: #f0f2fa;
+  border-radius: 8px;
+}
+
+section#overview .flexContainer .card .title {
+  font-weight: 700;
+  color: #63687e;
+}
+
+section#overview .flexContainer .card svg {
+  -ms-grid-column-align: right;
+      justify-self: right;
+}
+
+section#overview .flexContainer .card .number {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1e202a;
+}
+
+section#overview .flexContainer .card .change {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: right;
+  font-weight: 700;
+  color: #1db489;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#overview .flexContainer .card .change svg {
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 30rem) {
+  section#overview {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  section#overview {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  section#overview {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (min-width: 64rem) {
+  section#overview {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media screen and (min-width: 40rem) {
+  section#overview h2 {
+    max-width: 1100px;
+  }
+  section#overview .flexContainer {
+    max-width: 1100px;
+  }
+  section#overview .flexContainer .card {
+    width: 250px;
+  }
+}
+
+@media screen and (min-width: 72rem) {
+  section#overview h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section#overview .flexContainer {
+    margin: 0 auto;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: white;
+  position: relative;
+}
+
+body::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 17rem;
+  background-color: #f5f7ff;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  z-index: -1;
+}
+/*# sourceMappingURL=main.css.map */

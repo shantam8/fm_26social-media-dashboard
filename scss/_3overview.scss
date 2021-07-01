@@ -1,0 +1,83 @@
+section#overview {
+  margin-top: 2rem;
+  padding: 1rem 1rem 3rem 1rem;
+
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: $darkGrayishBlue;
+  }
+
+  .flexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    .card {
+      width: 343px;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      background-color: $lightGrayishBlue;
+      border-radius: 8px;
+
+      .title {
+        font-weight: 700;
+        color: $darkGrayishBlue;
+      }
+
+      svg {
+        justify-self: right;
+      }
+
+      .number {
+        align-self: flex-end;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: $veryDarkBlue;
+      }
+
+      .change {
+        align-self: flex-end;
+        justify-self: right;
+        font-weight: 700;
+        color: $limeGreen;
+        @include flexCenter;
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  @include paddingMediaQueries;
+
+  @media screen and (min-width: 40rem) {
+    h2 {
+      max-width: 1100px;
+    }
+
+    .flexContainer {
+      max-width: 1100px;
+
+      .card {
+        width: 250px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 72rem) {
+    h2 {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .flexContainer {
+      margin: 0 auto;
+    }
+  }
+}

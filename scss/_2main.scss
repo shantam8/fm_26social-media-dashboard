@@ -1,0 +1,87 @@
+section#main {
+  padding: 0 1rem;
+
+  .flexContainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    .card {
+      width: 343px;
+      padding: 2rem;
+      text-align: center;
+      border-top: 6px solid transparent;
+      border-radius: 8px;
+      background-color: $lightGrayishBlue;
+
+      .username {
+        font-size: 0.8rem;
+        font-weight: 700;
+        color: $darkGrayishBlue;
+        @include flexCenter;
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+
+      .mainNumber {
+        margin-top: 1rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color: $veryDarkBlue;
+      }
+
+      .kind {
+        color: $darkGrayishBlue;
+        letter-spacing: 6px;
+      }
+
+      .change {
+        margin-top: 1rem;
+        font-weight: 700;
+        color: $limeGreen;
+        @include flexCenter;
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+
+      &.facebook {
+        border-color: $facebook;
+      }
+
+      &.twitter {
+        border-color: $twitter;
+      }
+
+      &.instagram {
+        border-color: turquoise;
+      }
+      &.youtube {
+        border-color: $youTube;
+      }
+    }
+  }
+
+  @include paddingMediaQueries;
+
+  @media screen and (min-width: 40rem) {
+    .flexContainer {
+      max-width: 1100px;
+
+      .card {
+        width: 250px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 72rem) {
+    .flexContainer {
+      margin: 0 auto;
+    }
+  }
+}

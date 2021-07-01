@@ -1,0 +1,42 @@
+@import "colors";
+@import "fonts";
+@import "mixins";
+
+@import "1header";
+@import "2main";
+@import "3overview";
+
+
+//    font-family: 'Inter', sans-serif; 4 7
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+body{
+    background-color: $white;
+
+
+    position: relative
+    ;
+
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 17rem;
+        background-color: $veryPaleBlue;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        z-index: -1;
+    }
+}

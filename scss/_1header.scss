@@ -1,0 +1,96 @@
+header {
+  padding: 2rem 1rem;
+
+  .flexContainer {
+
+    .title {
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+
+      p {
+        margin-top: 0.5rem;
+        font-weight: 700;
+        color: $darkGrayishBlue;
+      }
+    }
+
+    .toggleBar {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid black;
+
+      p {
+        font-weight: 700;
+        color: $darkGrayishBlue;
+      }
+
+      button {
+        padding: 3px;
+        width: 60px;
+        height: 30px;
+        background-color: $toggleLight;
+        border-radius: 15px;
+        border: none;
+
+        &:hover, &:focus{
+          cursor: pointer;
+          outline: 2px solid red;   
+        }
+
+        .switch {
+          margin: 0;
+          position: relative;
+          content: "";
+          width: 50%;
+          height: 100%;
+          left: 27px;
+          border-radius: 50%;
+          background-color: white;
+          transition: left 0.3s ease-in-out;
+
+          &.darkModeActive{
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @include paddingMediaQueries;
+
+  @media screen and (min-width: 40rem) {
+    .flexContainer {
+      max-width: 1100px;
+    }
+  }
+
+  @media screen and (min-width: 50rem) {
+    .flexContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .toggleBar {
+        margin: 0;
+        padding: 0;
+        border-top: none;
+
+        p {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 72rem) {
+    .flexContainer {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
