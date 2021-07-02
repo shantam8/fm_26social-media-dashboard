@@ -51,7 +51,7 @@ header .flexContainer .toggleBar button .switch {
   content: "";
   width: 50%;
   height: 100%;
-  left: 14px;
+  left: 13px;
   border-radius: 50%;
   background-color: white;
   -webkit-transition: all 0.3s ease-in-out;
@@ -70,7 +70,7 @@ header .flexContainer .toggleBar button.darkModeActive {
 }
 
 header .flexContainer .toggleBar button.darkModeActive .switch {
-  left: -14px;
+  left: -13px;
   background-color: #252a41;
 }
 

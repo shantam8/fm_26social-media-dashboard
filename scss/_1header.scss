@@ -44,8 +44,7 @@ header {
           content: "";
           width: 50%;
           height: 100%;
-          left: 14px;
-          //left: 27px;
+          left: 13px;
           border-radius: 50%;
           background-color: white;
           transition: all 0.3s ease-in-out;
@@ -66,8 +65,7 @@ header {
           );
 
           .switch {
-            left: -14px;
-            //left: 0;
+            left: -13px;
             background-color: $darkDesaturatedBlue;
           }
         }
