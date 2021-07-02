@@ -38,12 +38,14 @@ header {
         border: none;
 
         .switch {
+          display: inline-block;
           margin: 0;
           position: relative;
           content: "";
           width: 50%;
           height: 100%;
-          left: 27px;
+          left: 14px;
+          //left: 27px;
           border-radius: 50%;
           background-color: white;
           transition: all 0.3s ease-in-out;
@@ -64,7 +66,8 @@ header {
           );
 
           .switch {
-            left: 0;
+            left: -14px;
+            //left: 0;
             background-color: $darkDesaturatedBlue;
           }
         }
