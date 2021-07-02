@@ -26,14 +26,16 @@
 
         <div class="toggleBar">
           <p>Dark Mode</p>
-          <button id="toggleDarkModeBtn"><div class="switch"></div></button>
+          <button id="toggleDarkModeBtn" aria-label="toggleDarkMode">
+            <div class="switch"></div>
+          </button>
         </div>
       </div>
     </header>
 
     <section id="main">
       <div class="flexContainer">
-        <div class="card facebook">
+        <button class="card facebook" aria-label="stats Facebook">
           <p class="username">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
               <path
@@ -52,9 +54,9 @@
             </svg>
             12 Today
           </p>
-        </div>
+        </button>
 
-        <div class="card twitter">
+        <button class="card twitter" aria-label="stats Twitter">
           <p class="username">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
               <path
@@ -73,8 +75,8 @@
             </svg>
             99 Today
           </p>
-        </div>
-        <div class="card instagram">
+        </button>
+        <button class="card instagram" aria-label="stats Instagram">
           <p class="username">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
               <defs>
@@ -101,8 +103,8 @@
 
             1099 Today
           </p>
-        </div>
-        <div class="card youtube">
+        </button>
+        <button class="card youtube" aria-label="stats Youtube">
           <p class="username">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
               <path
@@ -114,14 +116,14 @@
           </p>
           <p class="mainNumber">8239</p>
           <p class="kind">Subscribers</p>
-          <p class="change">
+          <p class="change negative">
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4">
               <path fill="#1EB589" fill-rule="evenodd" d="M0 4l4-4 4 4z" />
             </svg>
 
             144 Today
           </p>
-        </div>
+        </button>
       </div>
     </section>
 
@@ -129,7 +131,7 @@
       <h2>Overview - Today</h2>
 
       <div class="flexContainer">
-        <div class="card">
+        <button class="card" aria-label="page views Facebook">
           <p class="title">Page Views</p>
 
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
@@ -146,9 +148,9 @@
             </svg>
             3%
           </p>
-        </div>
+        </button>
 
-        <div class="card">
+        <button class="card" aria-label="likes Facebook">
           <p class="title">Likes</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
             <path
@@ -158,16 +160,16 @@
           </svg>
           <p class="number">52</p>
 
-          <p class="change">
+          <p class="change negative">
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4">
               <path fill="#1EB589" fill-rule="evenodd" d="M0 4l4-4 4 4z" />
             </svg>
 
             2%
           </p>
-        </div>
+        </button>
 
-        <div class="card">
+        <button class="card" aria-label="likes Instagram">
           <p class="title">Likes</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
             <defs>
@@ -190,9 +192,9 @@
             </svg>
             2257%
           </p>
-        </div>
+        </button>
 
-        <div class="card">
+        <button class="card" aria-label="profile views Instagram">
           <p class="title">Profile Views</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
             <defs>
@@ -215,9 +217,9 @@
             </svg>
             1375%
           </p>
-        </div>
+        </button>
 
-        <div class="card">
+        <button class="card" aria-label="retweets Twitter">
           <p class="title">Retweets</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
             <path
@@ -234,9 +236,9 @@
 
             303%
           </p>
-        </div>
+        </button>
 
-        <div class="card">
+        <button class="card" aria-label="likes Twitter">
           <p class="title">Likes</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17">
             <path
@@ -252,9 +254,9 @@
             </svg>
             553%
           </p>
-        </div>
+        </button>
 
-        <div class="card">
+        <button class="card" aria-label="likes Youtube">
           <p class="title">Likes</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
             <path
@@ -264,16 +266,16 @@
           </svg>
           <p class="number">107</p>
 
-          <p class="change">
+          <p class="change negative">
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4">
               <path fill="#1EB589" fill-rule="evenodd" d="M0 4l4-4 4 4z" />
             </svg>
 
             19%
           </p>
-        </div>
+        </button>
 
-        <div class="card">
+        <button class="card" aria-label="total views Youtube">
           <p class="title">Total Views</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
             <path
@@ -283,13 +285,13 @@
           </svg>
           <p class="number">1407</p>
 
-          <p class="change">
+          <p class="change negative">
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="4">
               <path fill="#1EB589" fill-rule="evenodd" d="M0 4l4-4 4 4z" />
             </svg>
             12%
           </p>
-        </div>
+        </button>
       </div>
     </section>
   </body>

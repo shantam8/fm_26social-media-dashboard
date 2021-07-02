@@ -22,7 +22,10 @@ section#overview {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       background-color: $lightGrayishBlue;
+      border: none;
       border-radius: 8px;
+
+      @include cardHoverEffectLight;
 
       .title {
         font-weight: 700;
@@ -46,9 +49,31 @@ section#overview {
         font-weight: 700;
         color: $limeGreen;
         @include flexCenter;
+        @include negativeEntryRed;
 
         svg {
           margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  &.darkThemeSecOverview {
+    h2 {
+      color: $desaturatedBlue;
+    }
+
+    .flexContainer {
+      .card {
+        background-color: $darkDesaturatedBlue;
+        @include cardHoverEffectDark;
+
+        .title {
+          color: $desaturatedBlue;
+        }
+
+        .number {
+          color: $white;
         }
       }
     }

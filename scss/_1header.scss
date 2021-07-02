@@ -2,11 +2,11 @@ header {
   padding: 2rem 1rem;
 
   .flexContainer {
-
     .title {
       h1 {
         font-size: 1.5rem;
         font-weight: 700;
+        color: $veryDarkBlue;
       }
 
       p {
@@ -37,11 +37,6 @@ header {
         border-radius: 15px;
         border: none;
 
-        &:hover, &:focus{
-          cursor: pointer;
-          outline: 2px solid red;   
-        }
-
         .switch {
           margin: 0;
           position: relative;
@@ -51,11 +46,46 @@ header {
           left: 27px;
           border-radius: 50%;
           background-color: white;
-          transition: left 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+        }
 
-          &.darkModeActive{
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          outline: 2px solid red;
+        }
+
+        &.darkModeActive {
+          background-color: transparent;
+          background-image: linear-gradient(
+            to Right,
+            $toggleDarkFrom,
+            $toggleDarktTo
+          );
+
+          .switch {
             left: 0;
+            background-color: $darkDesaturatedBlue;
           }
+        }
+      }
+    }
+  }
+
+  &.darkThemeHeader {
+    .flexContainer {
+      .title {
+        h1 {
+          color: $white;
+        }
+        p {
+          color: $desaturatedBlue;
+        }
+      }
+      .toggleBar {
+        border-color: $desaturatedBlue;
+        p {
+          color: $desaturatedBlue;
         }
       }
     }

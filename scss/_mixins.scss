@@ -14,7 +14,7 @@
     padding-left: 3rem;
     padding-right: 3rem;
   }
-  
+
   @media screen and (min-width: 50rem) {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -23,5 +23,35 @@
   @media screen and (min-width: 64rem) {
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+}
+
+@mixin negativeEntryRed {
+  &.negative {
+    color: $brightRed;
+    svg {
+      rotate: 180deg;
+      path {
+        fill: red;
+      }
+    }
+  }
+}
+
+@mixin cardHoverEffectLight {
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: darken($lightGrayishBlue, 4%);
+    outline: none;
+  }
+}
+
+@mixin cardHoverEffectDark {
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: lighten($darkDesaturatedBlue, 4%);
+    outline: none;
   }
 }
