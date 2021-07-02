@@ -169,11 +169,14 @@ section#main .flexContainer {
   gap: 2rem;
 }
 
+section#main .flexContainer a {
+  text-decoration: none;
+}
+
 section#main .flexContainer .card {
   width: 343px;
   padding: 2rem;
   text-align: center;
-  border: none;
   border-top: 6px solid transparent;
   border-radius: 8px;
   background-color: #f0f2fa;
@@ -354,6 +357,10 @@ section#overview .flexContainer {
   gap: 2rem;
 }
 
+section#overview .flexContainer a {
+  text-decoration: none;
+}
+
 section#overview .flexContainer .card {
   width: 343px;
   padding: 1rem;
@@ -364,7 +371,6 @@ section#overview .flexContainer .card {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   background-color: #f0f2fa;
-  border: none;
   border-radius: 8px;
 }
 

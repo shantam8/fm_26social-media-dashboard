@@ -15,6 +15,10 @@ section#overview {
     justify-content: flex-start;
     gap: 2rem;
 
+    a{
+      text-decoration: none;
+    }
+
     .card {
       width: 343px;
       padding: 1rem;
@@ -22,7 +26,6 @@ section#overview {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       background-color: $lightGrayishBlue;
-      border: none;
       border-radius: 8px;
 
       @include cardHoverEffectLight;

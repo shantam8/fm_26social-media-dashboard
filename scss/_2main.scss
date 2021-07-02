@@ -8,11 +8,14 @@ section#main {
     justify-content: flex-start;
     gap: 2rem;
 
+    a{
+      text-decoration: none;
+    }
+
     .card {
       width: 343px;
       padding: 2rem;
       text-align: center;
-      border: none;
       border-top: 6px solid transparent;
       border-radius: 8px;
       background-color: $lightGrayishBlue;
